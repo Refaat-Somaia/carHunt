@@ -1,0 +1,48 @@
+.container-account{
+    position: relative;
+    width: 57rem;
+    margin: auto;
+    height: 20rem;
+    top: 7rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.container-account h1{
+    text-align: start;
+
+    font-size: 2.2rem; 
+    margin-left: 1.7rem;  
+    margin-bottom: 0rem;
+}
+.container-account input{
+    margin: 0;
+
+}
+.container-account form{
+    height: 100%;
+}
+.container-account .col{
+    margin: 0 1rem;
+    display: inline-block;
+    
+}
+.container-account p{
+    text-align: start;
+    opacity: 0.8;
+    position: relative;
+    top: 0.7rem;
+}
+.container-account button{
+    position: relative;
+    top: 3rem;
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: #fff;
+    background-color: #0EB29A;
+}
+#updatePassBtn{
+    background-color: #0881A3;
+}

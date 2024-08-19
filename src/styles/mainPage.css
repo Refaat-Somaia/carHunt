@@ -1,0 +1,183 @@
+.cars-container{
+    position: relative;
+    top: 8rem;
+    width: 90%;
+    margin:0px auto ;
+    margin-bottom: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+
+}
+.cars-card{
+    position: relative;
+    width: 15rem;
+    margin: 0.8vw;
+    overflow: hidden;
+    height: 19rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    transition: 0.2s;
+    flex-direction: column;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+.cars-card:hover{
+    box-shadow: #F99417 0px 0px 4px;
+}
+.img-container{
+    height: 11.9rem;
+    display: flex;
+    justify-content: center;
+}
+.car-year{
+    position: relative;
+    font-size: 1rem;
+    bottom: 2rem;
+}
+.car-img{
+    position: absolute;
+    margin-top: 2rem;
+    width: 12rem;   
+}
+.car-model{
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 600;   
+    bottom: 1rem;
+    margin-bottom: 0px;
+}
+.car-button{
+    position: relative;
+    width: 100%;
+    font-size: 1.3rem;
+    height: 4rem;
+    font-family: myFont;
+    border: none;
+    color: #F99417;
+    background-color: inherit;
+    margin-bottom: 0vw;
+    transition:0.3s ;
+}
+.car-color{
+    position: relative;
+    width: 1.4rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    margin: auto;
+    bottom: 2.5rem;
+    margin-bottom: -1.48rem;
+    background-color: white;
+}
+.car-button:hover{
+    background-color: #DDDDDD;
+}
+.searchBar{
+    position: relative;
+    top: 7rem;
+    margin: auto;
+    width: 80%;
+    height: 5rem;
+}
+.searchBar form{
+  width: 50%;
+  margin-right: 10%;
+  display: inline-block;
+}
+.search{
+    position: relative;
+    width:100%;
+    font-family: myFont;
+    padding-left: 1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: white;
+    padding-top:0.2rem ;
+    outline: none;
+    font-size: 1.1rem;
+}
+.search::placeholder{
+    font-family: myFont;
+    font-size: 1.1rem;
+}
+.filter-icon{
+    font-size: 1.7rem;
+    color: #F99417;
+    margin-right: 4%;
+
+}
+.order-icon{
+    display: inline-block;
+
+    font-size: 1.7rem;
+    color: #F99417;
+    margin: auto;
+    margin-left: 2rem;
+}
+
+.loader {
+  color: #F99417;
+  font-size: 4rem;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  top: 10vh;
+  
+  transform: translateZ(0);
+  animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@keyframes mltShdSpin {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em,
+    0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+    0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 
+    0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 
+    0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, 
+    -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, 
+    -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+     -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, 
+     -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+     -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, 
+     -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 
+    0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+
+@keyframes round {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+   
+      

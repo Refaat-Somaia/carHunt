@@ -1,0 +1,233 @@
+:root {
+    --green-color: #0EB29A;
+    --red-color: #E43F5A;
+  }
+
+
+.contianer-date,.contianer-address,.contianer-confirm{
+    width: 100%;
+    height: 25rem;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+@keyframes slide-in-date {
+    from{
+        transform: translateX(-70vw);
+
+    }
+   
+    to{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+@keyframes slide-in-address {
+    from{
+        transform: translateX(-70vw);
+
+    }
+   
+    to{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+.contianer-date h2,.contianer-address h2,.contianer-confirm h2{
+    position: relative;
+    font-size: 2.5rem;
+    top: 1rem;
+}
+#monthFrom,#monthTo,#dayFrom,#dayTo{
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    font-family: myFont;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin:0 1rem;
+    margin-bottom: 3rem;
+}
+.contianer-date .row p{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.contianer-date .row button{
+    margin-top: 0;
+
+}
+.contianer-date .row .column{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.edit-address-btn{
+    border: none;
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    color: white;
+    transition: 0.3s;
+    background-color: var(--green-color);
+}
+.edit-address-btn:hover{
+    scale: 1.1;
+    color: var(--green-color);
+    background-color: #F5F5F5;
+}
+.contianer-address p{
+    font-size: 1.1rem;
+}
+.contianer-address .signUp-input{
+    background-color: #F5F5F5;
+    width: max(20rem,40%);
+    margin-bottom: 2rem;
+}
+@keyframes alert-in1 {
+    from{
+        transform: translateY(-500px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(0px);
+
+    }
+}
+@keyframes alert-out1 {
+    20%{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(-500px);
+
+    }
+}
+
+#alertAdressSaved,#alertInvalidDate{
+    position: fixed;
+    width: 20rem;
+    height: 6rem;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 1rem;
+    display: none;
+    top: 6rem;
+    border: solid 2px var(--green-color);
+    text-align: center;
+    z-index: 1;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+   
+}
+
+#alertAdressSaved .icon{
+    font-size: 3rem;
+    color: var(--green-color);
+    margin-bottom: -1rem;
+}
+#alertAdressSaved p{
+    color: var(--green-color);
+    font-size: 1.4rem;
+}
+#alertInvalidDate{
+    border: solid 2px var(--red-color);
+}
+#alertInvalidDate .icon{
+    font-size: 3rem;
+    color: var(--red-color);
+    margin-bottom: -1rem;
+}
+#alertInvalidDate p{
+    color: var(--red-color);
+    font-size: 1.4rem;
+}
+.contianer-confirm .column .icon{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+
+
+}
+.contianer-confirm .column {
+    display: inline-block;
+    padding: 0 3rem;
+}
+.contianer-confirm{
+    height: 30rem;
+}
+.contianer-confirm .column p{
+    margin-bottom: -1rem;
+    text-align: start;
+    font-size: 1.3rem;
+}
+#blurBg1{
+    z-index: 4;
+    top: 0;
+position: fixed;
+display: none;
+width: 100%;
+height: 100vh;
+background-color: black;
+opacity: 0.3;
+}
+.notify{
+    position: fixed;
+    width: 25rem;
+    left: 50%;
+    top: 25%;
+    padding: 2rem;
+    transform: translate(-50%, 0);
+    background-color: #F5F5F5;
+    z-index: 5;
+    display: none;
+    text-align: center;
+    font-size: 1.3rem;
+    animation: icon-pop 0.7s;
+
+}
+.notify p{
+    animation: text-in 0.5s;
+
+}
+.notify button{
+    margin: 0;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    animation: text-in 0.5s;
+
+}
+.notify .icon{
+    font-size: 4rem;
+}
+@keyframes icon-pop {
+    from{
+        scale: 0;
+    }
+    40%{
+        scale: 1.2;
+    }
+    to{
+        scale:1;
+    }
+}
+
+@media (max-width:1023px) {
+    .contianer-date,.contianer-confirm{
+        height: 35rem;
+    }
+    
+}
+
+@media (max-width:511px) {
+    .contianer-date{
+        height: 48rem;
+    }
+}

@@ -1,0 +1,234 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body::-webkit-scrollbar
+{
+    height: 0;
+    width: 0;
+
+}
+
+body::-webkit-scrollbar-thumb
+{
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.container-signUp{
+    position: absolute;
+    width: 80%;
+    height: fit-content;
+    margin-top:6rem ;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+
+}
+#logInForm{
+    position: absolute;
+    margin-top: 12rem;
+}
+#blurBg{
+    z-index: 4;
+    top: 0;
+position: fixed;
+position: absolute;
+display: none;
+width: 100%;
+height: 100vh;
+background-color: black;
+opacity: 0.3;
+}
+.reset-email{
+    left: 0; 
+    word-spacing: 0.1rem;
+    position: fixed;
+    z-index: 4;
+    top: 25%;
+    padding: 1rem;
+    display: none;
+    font-size: 1.1rem;
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 30rem;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+.reset-email button{
+    width: 50%;
+    padding: 0;
+    text-align: center;
+    background-color: #F99417;
+    color: white;
+}
+@keyframes slide-out {
+    to{
+        transform: translateY(-70rem);
+    }
+}
+@keyframes slide-in {
+ from{
+    transform: translateY(70rem);
+
+ }
+ to{
+    transform: translateY(0);
+
+ }
+}
+.signUp-input{
+    position: relative;
+    font-family: myFont;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    font-size: 1rem;
+    width: 25rem;
+    height: 3.2rem;
+    margin:0.8rem 1rem;
+}
+.container-signUp button{
+    background-color: #F99417;
+    color: white;
+    padding-left: 0;
+    margin: 0.8rem 5rem;
+    width: 20rem;
+    z-index: 1;
+
+}
+.loader{
+    display: block;
+    top: 25%;
+}
+.container-signUp button:hover{
+    background-color: inherit;
+    color: #F99417;
+    box-shadow: #F99417 0px 0px 4px;
+
+}
+.container-signUp h2{
+    font-size: 2.5rem;
+    text-align: start;
+    width: 70%;
+    margin: auto;
+    
+}
+.ref{
+    position: relative;
+    font-size: 1.1rem;
+    color: #F99417;
+    cursor: pointer;
+    text-decoration: underline;
+    bottom: 1rem;
+}
+.signUp-input:focus{
+    box-shadow: #F99417 0px 0px 4px;
+
+}
+
+#alert{
+    position: fixed;
+    width: 20rem;
+    height: 6rem;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 1rem;
+    display: none;
+    top: 6rem;
+    border: solid 2px #E43F5A;
+    text-align: center;
+    z-index: 1;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+   
+}
+@keyframes alert-in {
+    from{
+        transform: translateY(-500px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(0px);
+
+    }
+}
+@keyframes alert-out {
+    20%{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(-500px);
+
+    }
+}
+#alert .icon{
+    font-size: 3rem;
+    color: #E43F5A;
+    margin-bottom: -1rem;
+}
+#alert p{
+    color: #E43F5A;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1470px) {
+    .container-signUp h2{
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container-signUp{
+        margin:auto ;
+        margin-top: 6rem;
+    }
+    .reset-email{
+        width: 22rem;
+    }
+    .signUp-input{
+        width: 18rem;
+        height: 8vh;
+        margin: 0.5rem;
+        text-align: start;
+    }
+    .signUp-input:nth-child(8){
+        width: 18.5rem;
+        
+    }
+    .container-signUp button{
+        background-color: #F99417;
+        color: white;
+        width: 18.5rem;
+        text-align: center;
+    
+    }
+.container-signUp button{
+    margin: 0.8rem;
+}
+    .ref2{
+        width: 100%;
+
+
+    }
+    .ref{
+    }
+  }
+  

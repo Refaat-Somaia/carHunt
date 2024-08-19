@@ -1,0 +1,212 @@
+.hero{
+    height: 100vh;
+}
+.hero-left{
+    width: 100%;
+    max-width: 47rem;
+    display: inline-block;
+}
+.hero-bg{
+    position: relative;
+    width:45rem;
+    top: 15rem;
+    left: -17rem;
+    transform: rotateY(180deg);
+}
+.hero-car{
+    left: 3rem;
+    width:38rem;
+    bottom: 7rem;
+    position: relative;
+    animation-name: car-in;
+    animation-duration: 1.5s;
+}
+@keyframes car-in {
+    from {transform: translateX(-500px);}
+    to {transform: translateX(00px);}
+  }
+.hero-right{
+    position: relative;
+    display: inline-block;
+    top: -35%;
+    width: 45%;
+}
+
+.hero-text{
+    position: relative;
+    font-size: 3rem;
+    width: 100%;
+    top: 2rem;
+    animation-name: text-in;
+    animation-duration: 1s;
+}
+@keyframes text-in {
+    from {transform: translateY(200px);
+    opacity: 0;}
+    to {transform: translateX(00px);
+        opacity: 1}
+  }
+.hero-p{
+    position: relative;
+    width: 100%;
+    font-size: 2.5rem;
+    animation-name: text-in;
+    animation-duration: 1.5s;
+}
+
+.hero-btn{
+    position: relative;
+    width: 12rem;
+    font-family: myFont;
+    font-size: 1.1rem;
+    text-align: center;
+    border: none;
+    color: white;
+    align-items: center;
+    background-color:  #F99417;
+    height: 3.8rem;
+    z-index: 1;
+    animation-name: text-in;
+    animation-duration: 1.5s;
+}
+
+.hero-btn1{
+    position: absolute;
+    left: 0px;
+    font-family: myFont;
+    font-size: 1.1rem;
+    border: none;
+    height: 3.8rem;
+    bottom: 0vh;
+    width: 0px;
+    background-color: #F5F5F5;
+    -webkit-transition: width 0.5s;
+    border-width: 2px;
+    padding: 0px;
+    z-index: 1;
+
+}
+.hero-btn:hover .hero-btn1{
+    width: 12rem;
+    background-color: #F5F5F5;
+}
+.sedan{
+    width: 5vw;
+}
+
+
+.icon{
+    color: #F99417;
+    font-Size:1.5rem;
+    margin-Top:0.8vh;
+    transition:0.3s;
+}
+@media (max-width: 1500px) {
+    
+    .hero-left{
+        width: 45%;
+    }
+    .hero-bg{
+        top: 10rem;
+        width: 35rem;
+        left: -10rem;
+    }
+    .hero-car{
+        width: 31rem;
+        bottom: 7rem;
+    }
+    .hero-text{
+        font-size: 2.7rem;
+        
+
+    }
+    .hero-right{
+        top: -30%;
+    }
+    .hero-p{
+        top: 0;
+        font-size: 2rem;
+    }
+    .hero-btn{
+        width: 10rem;
+    }
+    .hero-btn:hover .hero-btn1{
+    width: 10rem;
+    }
+}
+@media (max-width:1236px) {
+  
+    .hero-left{
+        width: 50%;
+    }
+    .hero-bg{
+        width: 25rem;
+        top: 15rem;
+        left: -8rem;
+    }
+    .hero-car{
+        width: 25rem;
+        bottom: -2rem;
+    }
+    .hero-text{
+        font-size: 2.5rem;
+    }
+    .hero-right{
+        top: -1%;
+    }
+    .hero-p{
+        font-size: 2rem;
+    }
+    .hero-btn{
+        width: 10rem;
+    }
+    .hero-btn:hover .hero-btn1{
+    width: 10rem;
+    }
+    
+}
+
+@media (max-width:980px) {
+    .hero-left{
+        position: relative;
+        bottom: 3rem;
+        width: 100%;
+    }
+ 
+    .hero{
+        height: auto ;
+    }
+    .hero-bg{
+        left: -8rem;
+    }
+    .hero-car{
+        width: 70%;
+    }
+    .hero-text{
+        font-size: 2.5rem;
+    }
+    .hero-right{
+        bottom: 3rem;
+        width: 100%;
+        text-align: center;
+
+    }
+    .hero-p{
+        margin: auto;
+        width:80%;
+        font-size: 2rem;
+    }
+    .hero-btn{
+        width: 10rem;
+    }
+    .hero-btn:hover .hero-btn1{
+    width: 10rem;
+    }
+    .hero-btn{
+        margin: auto;
+        margin-bottom: 15%;
+    }
+    
+}
+
+    
