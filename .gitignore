@@ -7,8 +7,8 @@
 /public/assets
 /src/assets
 /.firebase
-firebase.json
-server.js
+/firebase.json
+/server.js
 
 # testing
 /coverage
