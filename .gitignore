@@ -6,13 +6,16 @@
 .pnp.js
 /public/assets
 /src/assets
-
+/.firebase
+firebase.json
+server.js
 
 # testing
 /coverage
 
 # production
 /build
+
 
 # misc
 .DS_Store
